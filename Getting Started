@@ -1,0 +1,7 @@
+First, download Atom.io by searching atom.io and downloading for your OS (I used Windows). Next, in Atom hit CTRL + , to get to settings and hit “Install Packages.” Search “atom runner” and download it. It should look like this:
+
+Now, make a new file from the top left-hand corner.
+
+Write your code and save as ruby file (.rb).
+
+To run the file, use ALT + R (CTRL + R for Mac). It should look like this when it runs:
