@@ -1,4 +1,4 @@
-First, download Atom.io by searching atom.io and downloading for your OS (I used Windows). Next, in Atom hit CTRL + , to get to settings and hit “Install Packages.” Search “atom runner” and download it. It should look like this:
+First, download Atom.io by going to <a href="https://atom.io/">https://atom.io/</a> and downloading for your OS (I used Windows). Next, in Atom hit CTRL + , to get to settings and hit “Install Packages.” Search “atom runner” and download it. It should look like this:
 
 Now, make a new file from the top left-hand corner.
 
