@@ -1,5 +1,5 @@
 # Ruby
-
+Ruby is an object oriented language with significant flexibility.
 # History
 The language Ruby was created by Yukihiro Matsumoto and released to the public in 1995. It was created to “form a new language that balanced functional programming with imperative programming.” (https://www.ruby-lang.org/en/about/)
 # Usage
