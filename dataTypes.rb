@@ -36,3 +36,11 @@ print newList[2], "\n" #this prints "Ruby"
 exampleVar = "Hello"
 exampleVar = 1
 print exampleVar, "\n" #this prints the most recent version of exampleVar which is 1
+
+#you can not add strings and ints
+#x = "5" + 6
+#print x
+
+#follow PEMDAS?
+y = 2+3*5 #should be 17 if follows order of operations
+print y #outputs 17 which means it does follow order of operations
