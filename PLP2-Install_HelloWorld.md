@@ -1,7 +1,8 @@
-# Getting Started
+# Installation
 First, download Virtual Studio Code (VSCode) by going to https://code.visualstudio.com/Download and downloading for your OS (I used Windows).
 Next, in VSCode go to "extentions" or hit CTRL + Shift + X. Search “ruby” by Peng Lv and download it. Next, in extentions search "code runner" by Jun Han and download it. This will let you write and run code within VSCode.
 
+# First Ruby Program: Hello World
 Now, make a new file from the top left-hand corner in VSCode. You should hit "file" and select "new file" from the dropdown menu -- or use CTRL + N.
 Write your code and save as ruby file (.rb). I started with the following Ruby code to print "Hello World":
 ```
