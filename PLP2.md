@@ -47,3 +47,7 @@ Another way to convert types is to use Integer() or String() to convert what is 
 Integer("abc")
 ```
 This would give an error.
+
+# Sources
+https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-ruby
+https://www.freecodecamp.org/news/learning-ruby-from-zero-to-hero-90ad4eecc82d/
