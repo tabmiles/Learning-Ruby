@@ -1,3 +1,5 @@
+# This file goes over booleans and conditionals in Ruby. Please see bool_conditional.rb for the code used in this file.
+
 # Booleans
 Boolean values in Ruby are true and false. The boolean operators are:
   && is and
@@ -61,7 +63,6 @@ end
 ```
 Here, if i is less than 2 it skips the puts line, else it runs the puts line.
 
-# Check out bool_conditional.rb for Ruby code
 
 # Sources
 https://www.rubyguides.com/2019/02/ruby-booleans/
