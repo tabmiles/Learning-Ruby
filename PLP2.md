@@ -30,3 +30,20 @@ x = "5" + 6
 puts x
 ```
 Because this code would give you an error that states "no implicit conversion of Integer into String."
+
+On the other hand, you can add floats and integers.
+
+# Converting Types
+You have two different ways to convert types. One way is to use .to_i (converts to integer), .to_f (converts to float), .to_s (converts to string). However, if you try to run this:
+
+```
+"abc".to_i
+```
+This would give you the value 0.
+
+Another way to convert types is to use Integer() or String() to convert what is inside the parenthesis to convert to an integer or string respectively. However if you were to try to run this:
+
+```
+Integer("abc")
+```
+This would give an error.
