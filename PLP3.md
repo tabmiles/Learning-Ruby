@@ -65,3 +65,5 @@ Here, if i is less than 2 it skips the puts line, else it runs the puts line.
 https://www.rubyguides.com/2019/02/ruby-booleans/
 http://rubylearning.com/satishtalim/simple_constructs.html
 https://www.tutorialspoint.com/ruby/ruby_operators.htm
+https://stackoverflow.com/questions/4010039/equivalent-of-continue-in-ruby
+https://www.tutorialspoint.com/ruby/ruby_if_else.htm
