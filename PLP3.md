@@ -49,6 +49,17 @@ end
 This code will print "this works" even though if you divide x by 0 in a seperate line it will cause a division error.
 
 # Case
+Ruby also supports case statements such as the one below:
+
+```
+for i in 0..3
+    if i < 2
+        next
+    end
+    puts "Value of i is #{i}"
+end
+```
+Here, if i is less than 2 it skips the puts line, else it runs the puts line.
 
 # Sources
 https://www.rubyguides.com/2019/02/ruby-booleans/
