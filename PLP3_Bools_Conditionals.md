@@ -61,6 +61,8 @@ end
 ```
 Here, if i is less than 2 it skips the puts line, else it runs the puts line.
 
+# Check out bool_conditional.rb for Ruby code
+
 # Sources
 https://www.rubyguides.com/2019/02/ruby-booleans/
 http://rubylearning.com/satishtalim/simple_constructs.html
