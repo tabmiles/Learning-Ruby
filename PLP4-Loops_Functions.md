@@ -1,3 +1,5 @@
+# This file goes over the loops and function syntax of Ruby. Please refer to loops.rb and functions.rb for more code.
+
 # Types of Loops
 Ruby has a few different kinds of loops: **while, for, until**.
 To form a **while loop** you would follow this form:
