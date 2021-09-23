@@ -192,7 +192,7 @@ Which would print the last variable, k:
 300
 ```
 
-# Pass-by-value
+# Pass-by-value/reference
 
 # Sources
 https://www.tutorialspoint.com/ruby/ruby_loops.htm
