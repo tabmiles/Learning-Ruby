@@ -66,15 +66,134 @@ i is: 3
 ```
 
 # Declare Function
+in Ruby, you can have multiple paramenters and return multiple values. There are 3 basic ways to write functions. The first way is to follow this form:
+```
+def method_name_one
+   expr..
+end
+```
+This function is named "method_name" and takes no parameters. A second way to write a function with parameters is like this:
+```
+def method_name_two (var1, var2)
+   expr..
+end
+```
+And lastly you can set a value for each parameter in case the function does not enter any values manually. Here is the form:
+```
+def method_name_three (var1 = value1, var2 = value2)
+   expr..
+end
+```
+To call the first function you would write:
+```
+method_name_one
+```
+For the second one you would write:
+```
+method_name_two someVar, anotherVar
+```
+And you could do either of the above for the last function, like so:
+```
+method_name_three
+# or
+method_name_three someVar, anotherVar
+```
+If you choose not to include any values for the function parameters for method_name_three when you call it, it will use the values initialized in the function itself (value1 and value2).
 
 # Where to put the Function
+The main syntax rule between calling and declaring functions is that you must call the function *after* you declare the function. Here is an example:
+```
+#declaration
+def testOne
+    puts("TestOne done")
+end
+#calling
+testOne
+```
 
 # Recursive Functions
+Ruby does allow recursive functions -- which is a function that calls itself. An example of this is here:
+```
+def recursion (x=0)
+    if x>2
+        return;
+    end
+    puts x
+    recursion(x+1)
+end
+recursion
+```
+Which will print:
+```
+0
+1
+2
+```
 
 # Parameters
+In addition to what we discussed above, there is also a way to have a function accept unlimited number of parameters by using the star symbol -- like so:
+```
+def sample (*test)
+    puts "The number of parameters is #{test.length}"
+    for i in 0...test.length
+       puts "The parameters are #{test[i]}"
+    end
+ end
+```
+By putting the star symbol before the variable used in the function, you are telling the function that you are using one variable -- but that one variable contains an array of all the values you use while calling it like so:
+```
+sample "Hi", "Hello", "5"
+```
+Which would then print:
+```
+The number of parameters is 3
+The parameters are Hi
+The parameters are Hello
+The parameters are 5
+```
+If we were to print "test" it would output:
+```
+["Hi", "Hello", "5"]
+```
+We put 5 in quotations which makes it a string, but we could also leave it as an integer and it would still work fine.
 
 # Returning Values
+You can return one value or multiple values in functions -- but you can *never return nothing*. You can also return multiple values like so:
+```
+def test
+    i = 100
+    j = 200
+    k = 300
+ return i, j, k
+ end
+ 
+ var = test
+ puts var
+```
+This function prints:
+```
+100
+200
+300
+```
+If we did not include the return statement in the function it would take *the last variable and return it*.
+```
+def test
+    i = 100
+    j = 200
+    k = 300
+ end
+ 
+ var = test
+ puts var
+```
+Which would print the last variable, k:
+```
+300
+```
 
-# Pass-by-[...]
+# Pass-by-value
 
-# Other
+# Sources
+https://www.tutorialspoint.com/ruby/ruby_loops.htm
+https://www.tutorialspoint.com/ruby/ruby_methods.htm
