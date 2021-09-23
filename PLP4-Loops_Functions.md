@@ -196,6 +196,87 @@ Which would print the last variable, k:
 
 # Pass-by-value/reference
 
+# Loop Modifiers
+There are second ways to write while and until loops, which are called loop modifiers.
+The while loop modifier is as expressed here:
+```
+i = 0
+num = 3
+begin
+    puts("i is: #{i}")
+    i+=1
+end while i<num
+```
+Which essentially says "do something while i is less than num" and prints exactly what the original while loop prints (above).
+
+The until loop modifier is as expressed here:
+```
+i = 0
+num = 3
+begin
+    puts("i is: #{i}")
+    i+=1
+end until i>num
+```
+Which essentially says "do something until i is greater than num" and prints exactly what the original until loop prints (above).
+
+Another way of writing a loop similar to the for loop is using "each":
+```
+(0..3).each do |i|
+    puts ("i is: #{i}")
+end
+```
+Which essentially says "for each number 0-3 do something" and prints exactly what the original for loop printed (above).
+
+# Other
+There are a few other tools you can use in loops which are break, next and redo.
+An example of using break is:
+```
+for i in 0..3
+    if i>1 then
+        break
+    end
+    puts ("i is: #{i}")
+end
+```
+Which says "if i is greater than 1 then break out of the for loop" and prints:
+```
+i is: 0
+i is: 1
+```
+
+An example of using next is:
+```
+for i in 0..3
+    if i<2 then
+        next
+    end
+    puts ("i is: #{i}")
+end
+```
+The if statement is saying "if i is less than 2 then go to the next iteration of the for loop" and it prints:
+```
+i is: 2
+i is: 3
+```
+
+An example of using redo is:
+```
+for i in 0..3
+    if i>1 then
+        puts ("i is: #{i}")
+        redo
+    end
+end
+```
+In this case, this would create an infinite loop because the function is saying "if i is greater than 1, then redo the for loop with the same value for i". In this case the infinite loop would print:
+```
+i is: 2
+i is: 2
+i is: 2
+. . .
+```
+
 # Sources
 https://www.tutorialspoint.com/ruby/ruby_loops.htm
 https://www.tutorialspoint.com/ruby/ruby_methods.htm
