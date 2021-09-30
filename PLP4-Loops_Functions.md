@@ -195,6 +195,28 @@ Which would print the last variable, k:
 ```
 
 # Pass-by-value/reference
+Ruby is a pass-by-value programming language. This means that instead of passing the memory location of something, it passes the value of something. If you take a look at passByTest.rb you will see how I tested to see if Ruby passes by value or reference. When we called here:
+
+```
+c = Cat.new("Mittens")
+c2 = c.copy_cat(c)
+```
+the function copy_cat passed the entire Cat object. And in the function here:
+
+```
+def copy_cat(c)
+        c2 = Cat.new(c.get_name)
+        return c2
+    end
+```
+the function creates a new Cat object and gets the name from the Cat passed into the function. And when we call this:
+
+```
+c.change_name("Spot")
+puts c.get_name
+puts c2.get_name
+```
+c changes its name to Spot and c2 does not get changed from Mittens. This is because Ruby passed the value of the Cat object/name rather than the memory location. If it had passed the memory location, c2's name would also change to Spot.
 
 # Loop Modifiers
 There are second ways to write while and until loops, which are called loop modifiers.
