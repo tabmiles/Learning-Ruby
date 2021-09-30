@@ -302,3 +302,4 @@ i is: 2
 # Sources
 https://www.tutorialspoint.com/ruby/ruby_loops.htm
 https://www.tutorialspoint.com/ruby/ruby_methods.htm
+(https://stackoverflow.com/questions/13526847/ruby-puts-string-and-integer-on-same-line
