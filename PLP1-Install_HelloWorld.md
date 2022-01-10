@@ -1,4 +1,4 @@
-# This file goes over the installation and running of Ruby code. Please see dataTypes.rb for code about data types.
+# This file goes over the installation and running of Ruby code.
 
 # Installation
 First, download Virtual Studio Code (VSCode) by going to https://code.visualstudio.com/Download and downloading for your OS (I used Windows).
